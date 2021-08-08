@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="55dp"
+    android:background="@color/grey"
+    tools:context=".create_project">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1.Project Information"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edittextbackground"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:text="Project type:" />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/spiner_project_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginHorizontal="20sp"
+                            android:layout_weight="0.5"
+                             />
+                    </LinearLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Location"
+                        app:hintTextColor="@color/white"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etlocatoion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#40C4FF"
+                            android:background="@color/grey"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/grey"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:text="Project owner:"
+                            android:textColor="@color/white"
+                             />
+                        <TextView
+                            android:id="@+id/etownername"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="5dp"
+                            android:textColorHint="#40C4FF"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+
+                    <!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="2.Material Information"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvcement"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/blue"
+                        android:gravity="center"
+                        android:text="Cement"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Supplier"
+                        app:boxBackgroundColor="@color/grey"
+                        app:hintTextColor="@color/blue">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etcement_supplier"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#40C4FF"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Price/Bag(50kg)"
+                        app:boxBackgroundColor="@color/grey"
+                        app:hintTextColor="@color/blue">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etcement_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#40C4FF"
+                            android:textColor="@color/white"
+                            android:inputType="number"
+                            android:textSize="20sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Brand name"
+                        app:boxBackgroundColor="@color/grey"
+                        app:hintTextColor="@color/blue">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etcement_brand"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#40C4FF"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvsand"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/blue"
+                        android:gravity="center"
+                        android:text="Sand"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Supplier"
+                        app:boxBackgroundColor="@color/grey"
+                        app:hintTextColor="@color/blue">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etsand_supplier"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#40C4FF"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Price/Truck"
+                        app:boxBackgroundColor="@color/grey"
+                        app:hintTextColor="@color/blue">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etsand_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#40C4FF"
+                            android:inputType="number"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Brand name"
+                        app:boxBackgroundColor="@color/grey"
+                        app:hintTextColor="@color/blue">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etsand_brand"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#40C4FF"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvsteel"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/blue"
+                        android:gravity="center"
+                        android:text="Steel"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Supplier"
+                        app:boxBackgroundColor="@color/grey"
+                        app:hintTextColor="@color/blue">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etsteel_supplier"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#40C4FF"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Price/Ton"
+                        app:boxBackgroundColor="@color/grey"
+                        app:hintTextColor="@color/blue">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etsteel_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#40C4FF"
+                            android:textColor="@color/white"
+                            android:inputType="number"
+                            android:textSize="20sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Brand name"
+                        app:boxBackgroundColor="@color/grey"
+                        app:hintTextColor="@color/blue">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etsteel_brand"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#40C4FF"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvconcrete"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/blue"
+                        android:gravity="center"
+                        android:text="Gravel"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Supplier"
+                        app:boxBackgroundColor="@color/grey"
+                        app:hintTextColor="@color/blue">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etconcrete_supplier"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#40C4FF"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Price/Truck"
+                        app:boxBackgroundColor="@color/grey"
+                        app:hintTextColor="@color/blue">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etconcrete_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#40C4FF"
+                            android:textColor="@color/white"
+                            android:inputType="number"
+                            android:textSize="20sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Brand name"
+                        app:boxBackgroundColor="@color/grey"
+                        app:hintTextColor="@color/blue">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etconcrete_brand"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#40C4FF"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvbricks"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/blue"
+                        android:gravity="center"
+                        android:text="Bricks"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Supplier"
+                        app:boxBackgroundColor="@color/grey"
+                        app:hintTextColor="@color/blue">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etbricks_supplier"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#40C4FF"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Price/Brick"
+                        app:boxBackgroundColor="@color/grey"
+                        app:hintTextColor="@color/blue">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etbricks_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#40C4FF"
+                            android:textColor="@color/white"
+                            android:inputType="number"
+                            android:textSize="20sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Brand name"
+                        app:boxBackgroundColor="@color/grey"
+                        app:hintTextColor="@color/blue">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etbrick_brand"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#40C4FF"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvwood"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/blue"
+                        android:gravity="center"
+                        android:text="Woods"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Supplier"
+                        app:boxBackgroundColor="@color/grey"
+                        app:hintTextColor="@color/blue">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etwood_supplier"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#40C4FF"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Price"
+                        app:boxBackgroundColor="@color/grey"
+                        app:hintTextColor="@color/blue">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etwood_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#40C4FF"
+                            android:textColor="@color/white"
+                            android:inputType="number"
+                            android:textSize="20sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Brand name"
+                        app:boxBackgroundColor="@color/grey"
+                        app:hintTextColor="@color/blue">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etwood_brand"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#40C4FF"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_create_project"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@drawable/btnsbackground"
+                android:text="Create Project"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

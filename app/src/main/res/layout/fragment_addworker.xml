@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:layout_marginTop="56dp"
+
+    tools:context=".addworker">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10sp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:text="Date&amp;/time:" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_add_worker_datetime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:text="Expertise:" />
+
+            <Spinner
+                android:id="@+id/spiner_worker_expertise"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_margin="8dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:text="Name:" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_add_worker_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:hint="Enter Name"
+                android:textSize="25sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:text="Contact:" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_add_worker_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:hint="Enter Contact"
+                android:inputType="number"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:text="Address:" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_add_worker_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:hint="Enter Address"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnsbackground"
+                android:text="Enter"
+                android:textSize="30sp"
+                android:id="@+id/btn_add_worker"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_margin="15dp"
+                />
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blue"
+                android:scaleType="fitXY"
+                android:layout_margin="8dp"
+                android:id="@+id/btnback_add_worker"
+                android:src="@drawable/ic_baseline_back"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</FrameLayout>

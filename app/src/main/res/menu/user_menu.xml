@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/user_myproject"
+            android:icon="@drawable/ic_project"
+            android:iconTint="@color/teal_200"
+            android:title="My project"
+            />
+        <item android:id="@+id/user_materialinfo"
+            android:icon="@drawable/ic_materials_transport"
+            android:iconTint="@color/teal_200"
+            android:title="Material Usage"
+            />
+        <item android:id="@+id/user_workersinfo"
+            android:icon="@drawable/workers"
+            android:iconTint="@color/teal_200"
+            android:title="Workers info"
+            />
+    </group>
+
+    <item android:id="@+id/user_logout"
+        android:icon="@drawable/ic_baseline_logout"
+        android:iconTint="@color/teal_200"
+        android:title="@string/logout"/>
+
+</menu>

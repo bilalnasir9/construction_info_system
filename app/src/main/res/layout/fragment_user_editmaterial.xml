@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:layout_marginTop="56dp"
+    tools:context=".User_editmaterial">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10sp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:text="You can only edit Quantity" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_edit_material_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:hint="Enter quantity used"
+                android:inputType="number"
+                android:textSize="25sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnsbackground"
+                android:text="Save Change"
+                android:textSize="30sp"
+                android:id="@+id/btn_edit_material"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_margin="15dp"
+                />
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blue"
+                android:scaleType="fitXY"
+                android:layout_margin="10sp"
+                android:id="@+id/btnbackedit"
+                android:src="@drawable/ic_baseline_back"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+</FrameLayout>

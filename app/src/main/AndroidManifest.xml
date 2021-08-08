@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.constructioninformationsystem">
+<uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ConstructionInformationSystem">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAe8nQCR7bM9UvR13eNv7mcD6D0y4IfiL4" />
+        <activity android:name=".splash_screen"
+            android:theme="@style/splashthem">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".admin_panel"
+            android:theme="@style/actionbar"> </activity>
+        <activity android:name=".content_main" />
+        <activity
+            android:name=".user_panel"
+            android:theme="@style/actionbar">
+
+        </activity>
+        <activity
+            android:name=".admin_login"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".user_registration"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+        </activity>
+    </application>
+
+</manifest>

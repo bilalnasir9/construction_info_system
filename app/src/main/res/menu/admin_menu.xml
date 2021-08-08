@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/admin_project"
+            android:icon="@drawable/ic_project"
+            android:iconTint="@color/teal_200"
+            android:title="@string/projects"/>
+        <item android:id="@+id/admin_allusers"
+            android:icon="@drawable/ic_baseline_users"
+            android:iconTint="@color/teal_200"
+            android:title="@string/allusers"/>
+
+    </group>
+    <item android:id="@+id/admin_logout"
+        android:icon="@drawable/ic_baseline_logout"
+        android:iconTint="@color/teal_200"
+        android:title="@string/logout"/>
+</menu>

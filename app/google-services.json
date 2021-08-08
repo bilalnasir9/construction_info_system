@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "335475833719",
+    "project_id": "construction-info-system-9b6f4",
+    "storage_bucket": "construction-info-system-9b6f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335475833719:android:2fdcb339ae674c21ba7f72",
+        "android_client_info": {
+          "package_name": "com.example.constructioninformationsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335475833719-namh2qqe6vofqhtmb2d4ng5h5l625up0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAe8nQCR7bM9UvR13eNv7mcD6D0y4IfiL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335475833719-namh2qqe6vofqhtmb2d4ng5h5l625up0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

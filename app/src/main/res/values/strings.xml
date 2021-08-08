@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Construction info system</string>
+    <string name="web_client_id">12345</string>
+    <string name="register">Register</string>
+    <string name="user_email">User Email</string>
+    <string name="user_password">User Password</string>
+    <string name="login">Login</string>
+    <string name="haven_t_account_go_to">Haven\'t account? go to</string>
+    <string name="registration">Registration</string>
+    <string name="user_name">User Name</string>
+    <string name="admin_email">Admin Email</string>
+    <string name="admin_password">Admin Password</string>
+    <string name="admin_login">Contractor Login</string>
+    <string name="projects">Projects</string>
+    <string name="opendrawer">open drawer</string>
+    <string name="closedrawer">close drawer</string>
+    <string name="admin_name">admin account</string>
+    <string name="admin_emailvalue">admin6860@gmail.com</string>
+    <string name="admin_passwordvalue">admin6860</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Create_project">Create Project</string>
+    <string name="material">Material info</string>
+    <string name="allusers">Users</string>
+    <string name="logout">Logout</string>
+
+</resources>
